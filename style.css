@@ -1,0 +1,25 @@
+html {
+	background-color: whitesmoke;
+	font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif; 
+	color: whitesmoke;
+}
+
+.playArea {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 1vh;
+	padding: 2vh;
+	background-color: darkslategrey;
+	height: 50vh;
+	width: 50vh;
+	margin: auto;
+	margin-top: 10vh;
+}
+
+.grid {
+	background-color: darkslategrey;
+}
+
+.blank {
+	background-color: darkslategrey;
+}
