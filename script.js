@@ -31,11 +31,14 @@ window.onload = function(){
 function move(event) {
 	let blankLocation = document.getElementById(`blankgrid`);
 	if(event.target.offsetLeft == blankLocation.offsetLeft || event.target.offsetTop == blankLocation.offsetTop) {
-			blankLocation.style.background = event.target.style.background;
-			event.target.style.background = ``;
-			event.target.removeEventListener(`click`, move);
-			blankLocation.id = event.target.id;
-			event.target.id = `blankgrid`;
-			blankLocation.addEventListener(`click`, move);
+			//console.log(event.target.offsetTop + event.target.clientHeight + event.target.clientHeight/20, blankLocation.offsetTop);
+			//if(event.target.offsetLeft + event.target.clientWidth + event.target.clientWidth/20 == blankLocation.offsetLeft || event.target.offsetTop + event.target.clientHeight + event.target.clientHeight/20 == blankLocation.offsetTop){
+				blankLocation.style.background = event.target.style.background;
+				event.target.style.background = ``;
+				event.target.removeEventListener(`click`, move);
+				blankLocation.id = event.target.id;
+				event.target.id = `blankgrid`;
+				blankLocation.addEventListener(`click`, move);
+			//}
 	}
 }
